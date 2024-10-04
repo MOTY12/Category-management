@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "NodeNext",
+        "noImplicitAny": true,
+        "module": "NodeNext",
+        "target": "es5",
+        "allowJs": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "typeRoots": ["./node_modules/@types", "./**/*.d.ts", "./winston-papertrail.d.ts"],
+      "lib": [
+        "decorators",
+        "dom",
+        "es5",
+        "scripthost",
+        "es2015.promise"
+      ]
+    },
+    "ts-node": {
+        "files": true
+    },
+    "files": ["./index.ts"],
+    "include": [
+        "./app/**/*.ts",
+        "./utils/**/*.ts",
+        "config/database/**/*.ts",
+        "./config/**/*.ts",
+        "tests",
+        "./winston-papertrail.d.ts",
+        "request.d.ts"
+    ]
+}
