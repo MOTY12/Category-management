@@ -16,13 +16,10 @@ export default function App(): http.Server {
         "*",
         "http://localhost:5173",
         "http://localhost:5174",
-        `${Env.get("COMPLIANCE_CLIENT_URL")}`,
-        `${Env.get("COMPLIANCE_CLIENT_ORGANIZATION_URL")}`,
-        `${Env.get("COMPLIANCE_ORGANIZATION_DEMO_CLIENT_URL")}`,
-        `${Env.get("COMPLIANCE_ADMIN_DEMO_CLIENT_URL")}`,
+        `${Env.get("CLIENT_URL")}`,
     ];
 
-    const corsUrls = [...(Env.get("COMPLIANCE_NODE_ENV") === "production" ? [] : developmentCorsUrls)];
+    const corsUrls = [...(Env.get("NODE_ENV") === "production" ? [] : developmentCorsUrls)];
     const corsOptions = {
         origin: corsUrls,
         credentials: true

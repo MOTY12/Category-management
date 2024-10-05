@@ -9,6 +9,8 @@ const defaults = {
     PORT: process.env.PORT,
     API_VERSION: process.env.API_VERSION,
     DB_URL: process.env.DB_URL,
+    NODE_ENV: process.env.NODE_ENV,
+    API_DOMAIN: process.env.API_DOMAIN
 };
 
 const config = {

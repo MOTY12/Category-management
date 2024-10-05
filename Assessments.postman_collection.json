@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "10ed2052-a340-4f85-813c-d0f90bd21c7c",
+		"name": "Assessments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31267600",
+		"_collection_link": "https://universal-equinox-184351.postman.co/workspace/My-Workspace~7e2d49b1-c6c0-4944-8dc3-b2fb67e7f158/collection/31267600-10ed2052-a340-4f85-813c-d0f90bd21c7c?action=share&source=collection_link&creator=31267600"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "Create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Category 3\",\n    \"parentId\": \"16\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3009/api/v1/category/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3009",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create root category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Root category\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bd-063quYpHv0/hqnbG1g9qeevESH8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:06:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/create\",\n    \"status\": \"success\",\n    \"message\": \"Category created successfully!\",\n    \"data\": {\n        \"id\": 16,\n        \"name\": \"Root category\",\n        \"parentId\": null\n    },\n    \"type\": \"Created\"\n}"
+						},
+						{
+							"name": "Create sub category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Category 3\",\n    \"parentId\": \"16\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-tqmZlER0V/cZ4zdoJptWH9v//WE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:12:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/create\",\n    \"status\": \"success\",\n    \"message\": \"Category created successfully!\",\n    \"data\": {\n        \"id\": 19,\n        \"name\": \"Category 3\",\n        \"parentId\": 16\n    },\n    \"type\": \"Created\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove a category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3009/api/v1/category/remove/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3009",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"remove",
+								"19"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/remove/19",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"remove",
+										"19"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b7-hQxKcJzEgaxkRn3mmv4kEv9ArEE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:14:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/remove/19\",\n    \"status\": \"success\",\n    \"message\": \"Category removed successfully!\",\n    \"data\": {\n        \"id\": 19,\n        \"name\": \"Category 3\",\n        \"parent_id\": 16\n    },\n    \"type\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Move a subtree from one parent to another parent;",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parentId\": \"18\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3009/api/v1/category/move/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3009",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"move",
+								"20"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successful Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"parentId\": \"18\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/move/20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"move",
+										"20"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-UGazHkyS1i7yQNqA47FHZmogVi8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:32:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/move/20\",\n    \"status\": \"success\",\n    \"message\": \"Category moved successfully!\",\n    \"data\": {\n        \"id\": 20,\n        \"name\": \"Sub category 1\",\n        \"parentId\": 18\n    },\n    \"type\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch a subtree",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "fetch root category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/getSubtree/16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"getSubtree",
+										"16"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "518"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"206-J09XlBtZfi9kHlOQCpbn0q7ptxc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:35:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/getSubtree/16\",\n    \"status\": \"success\",\n    \"message\": \"Category subtree fetched successfully!\",\n    \"data\": {\n        \"id\": 16,\n        \"name\": \"Root category\",\n        \"parent_id\": null,\n        \"children\": [\n            {\n                \"id\": 17,\n                \"name\": \"Category 1\",\n                \"parent_id\": 16,\n                \"children\": [\n                    {\n                        \"id\": 21,\n                        \"name\": \"Sub category 2\",\n                        \"parent_id\": 17,\n                        \"children\": []\n                    },\n                    {\n                        \"id\": 22,\n                        \"name\": \"Sub category 3\",\n                        \"parent_id\": 17,\n                        \"children\": []\n                    }\n                ]\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Category 2\",\n                \"parent_id\": 16,\n                \"children\": [\n                    {\n                        \"id\": 20,\n                        \"name\": \"Sub category 1\",\n                        \"parent_id\": 18,\n                        \"children\": []\n                    }\n                ]\n            }\n        ]\n    },\n    \"type\": \"OK\"\n}"
+						},
+						{
+							"name": "fetch subtree categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3009/api/v1/category/getSubtree/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3009",
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"getSubtree",
+										"17"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "334"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14e-1CPR4rNodBLg1Bi5kza98JajLdw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Oct 2024 17:42:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"url\": \"http://localhost:3009/api/v1/category/getSubtree/17\",\n    \"status\": \"success\",\n    \"message\": \"Category subtree fetched successfully!\",\n    \"data\": {\n        \"id\": 17,\n        \"name\": \"Category 1\",\n        \"parent_id\": 16,\n        \"children\": [\n            {\n                \"id\": 21,\n                \"name\": \"Sub category 2\",\n                \"parent_id\": 17,\n                \"children\": []\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Sub category 3\",\n                \"parent_id\": 17,\n                \"children\": []\n            }\n        ]\n    },\n    \"type\": \"OK\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

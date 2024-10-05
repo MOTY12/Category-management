@@ -1,0 +1,18 @@
+{
+    "development": {
+        "ENV": "DB_URL"
+    },
+    "test": {
+        "ENV": "DB_URL"
+    },
+    "production": {
+        "ENV": "DB_URL"
+    },
+    "staging": {
+        "ENV": "DB_URL"
+    },
+    "defaultEnv": {
+        "ENV": "NODE_ENV"
+    },
+    "sql-file": true
+}
